@@ -27,25 +27,18 @@
                  menorAux = menor;
                  maiorAux = maior;
                  
+                 var i = 0;
+
                 while(menor < maior){
 
                     if((menor + 1) % 2 === 0){
 
-                        [numerosPares] = menor;
+                        numerosPares[i] = menor;
+                        i++;
                     }
-
                     menor ++;
                 }
-
-                var i = 0;
-
-                // while (i < numerosPares.length){
-                //      console.log(numerosPares[i]);
-
-                //     i++;
-                // }
-
-                return [numerosPares];
+                return numerosPares;
             }
 
             var result = CalculaNumerosParesDadoIntervalo(5, 100);

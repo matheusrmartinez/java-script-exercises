@@ -1,0 +1,56 @@
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso JavaScript</title>
+    </head>
+    <body>
+        <script>
+            // var endereco = {
+            //     rua: "Rua dos pinheiros",
+            //     numero: 1293,
+            //     bairro: "Centro",
+            //     cidade: "São Paulo",
+            //     UF: "SP"
+            // };
+
+            // console.log(`O usuário mora em ${endereco.cidade} / ${endereco.UF} no bairro  ${endereco.bairro},  na rua ${endereco.rua}, nº ${endereco.numero}`);
+
+            function CalculaNumerosParesDadoIntervalo(x, y){
+                
+                
+                var maior, menor, menorAux, maiorAux;
+
+                 x > y ? x = maior : y = maior;
+                 x < y ? x = menor : y = menor; 
+                 var numerosPares;
+                 menorAux = menor;
+                 maiorAux = maior;
+                 
+                while(menor < maior){
+
+                    if((menor + 1) % 2 === 0){
+
+                        [numerosPares] = menor;
+                    }
+
+                    menor ++;
+                }
+
+                var i = 0;
+
+                // while (i < numerosPares.length){
+                //      console.log(numerosPares[i]);
+
+                //     i++;
+                // }
+
+                return [numerosPares];
+            }
+
+            var result = CalculaNumerosParesDadoIntervalo(5, 100);
+            console.log(result);
+           
+        </script>
+    </body>
+</html>

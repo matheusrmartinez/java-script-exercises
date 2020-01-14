@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curso JavaScript</title>
+    </head>
+    <body>
+        <script>
+            function calculaNumerosPares(x, y){
+                
+                var text = '';
+                var maior, menor;
+
+                 x > y ? maior = x : maior = y;
+                 x < y ? menor = x : menor = y; 
+                
+	           for (var i = menor; i < maior; i++) {
+                 if (i % 2 !== 0)
+                    continue;
+
+                text += i == x ? i : ', ' + i;
+          }
+
+           return text;
+         }
+
+        console.log(calculaNumerosPares(32, 321));
+		
+        </script>
+    </body>
+</html>
